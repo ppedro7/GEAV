@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircraft</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .aircraft-header {
+            background: url('images/N251MB-prop.jpg') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .aircraft-header h2 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        .section-title {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .icon-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .icon-list li i {
+            font-size: 1.2em;
+            margin-right: 10px;
+            color: #0056b3;
+        }
+
+        .btn-primary {
+            background-color: #0056b3;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #004494;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 400px; /* Adjust the height to make the images smaller */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white text-center p-3">
+        <div class="d-flex align-items-center justify-content-center">
+            <img src="images/GEAVlogo2b.png" alt="GEAV Logo" class="logo mr-3">
+            <h1 class="mb-0">Golden Eagle Aviators</h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">GEAV</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="partnership.html">Partnership</a></li>
+                <li class="nav-item"><a class="nav-link" href="aircraft.html">Aircraft</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="aircraft-header">
+        <h2>Our Aircraft</h2>
+    </div>
+
+    <div class="container mt-5">
+        <section class="info-section">
+            <h3 class="section-title text-center">N251MB 2006 Mooney M20M Bravo GX</h3>
+            <div id="aircraftCarousel" class="carousel slide mb-5" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#aircraftCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#aircraftCarousel" data-slide-to="1"></li>
+                    <li data-target="#aircraftCarousel" data-slide-to="2"></li>
+                    <li data-target="#aircraftCarousel" data-slide-to="3"></li>
+                    <li data-target="#aircraftCarousel" data-slide-to="4"></li>
+                    <li data-target="#aircraftCarousel" data-slide-to="5"></li>
+                    <li data-target="#aircraftCarousel" data-slide-to="6"></li>
+                    <li data-target="#aircraftCarousel" data-slide-to="7"></li>
+                    <li data-target="#aircraftCarousel" data-slide-to="8"></li>
+                    <li data-target="#aircraftCarousel" data-slide-to="9"></li>
+                    <li data-target="#aircraftCarousel" data-slide-to="10"></li>
+                    <li data-target="#aircraftCarousel" data-slide-to="11"></li>
+                    <li data-target="#aircraftCarousel" data-slide-to="12"></li>
+                    <li data-target="#aircraftCarousel" data-slide-to="13"></li>
+                    <li data-target="#aircraftCarousel" data-slide-to="14"></li>
+                    <li data-target="#aircraftCarousel" data-slide-to="15"></li>
+                    <li data-target="#aircraftCarousel" data-slide-to="16"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/N251MB-panel.jpg" class="d-block w-100" alt="N251MB Panel">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/N251MB-sbrake.jpg" class="d-block w-100" alt="N251MB Speed Brake">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/N251MB-leftback.jpg" class="d-block w-100" alt="N251MB Left Back">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/N69MB-right.jpg" class="d-block w-100" alt="N69MB Right">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/N69MB-rightback.jpg" class="d-block w-100" alt="N69MB Right Back">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/N69MB-rightfront.jpg" class="d-block w-100" alt="N69MB Right Front">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/N131US-right.jpg" class="d-block w-100" alt="N131US Right">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/N69MB-backseats.jpg" class="d-block w-100" alt="N69MB Back Seats">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/N69MB-baggagedoor.jpg" class="d-block w-100" alt="N69MB Baggage Door">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/N69MB-ceiling.jpg" class="d-block w-100" alt="N69MB Ceiling">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/N69MB-deicewindshield.jpg" class="d-block w-100" alt="N69MB De-Ice Windshield">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/N69MB-engine902.jpg" class="d-block w-100" alt="N69MB Engine 902">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/N69MB-frontseats.jpg" class="d-block w-100" alt="N69MB Front Seats">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/N69MB-leftwing.jpg" class="d-block w-100" alt="N69MB Left Wing">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/N69MB-PFD.jpg" class="d-block w-100" alt="N69MB PFD">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/N69MB-MFD.jpg" class="d-block w-100" alt="N69MB MFD">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#aircraftCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#aircraftCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="section-title">Specifications</h4>
+                    <ul class="list-unstyled icon-list">
+                        <li><i class="fas fa-chair"></i> Seats (including crew): 4</li>
+                        <li><i class="fas fa-cogs"></i> Engine Reserve: Included in buy-in and hourly</li>
+                        <li><i class="fas fa-fan"></i> Prop Reserve: Included in buy-in and hourly</li>
+                        <li><i class="fas fa-oil-can"></i> Oil Change Reserve: Included in hourly</li>
+                        <li><i class="fas fa-tachometer-alt"></i> Avionics Upgrade: Included in buy-in</li>
+                        <li><i class="fas fa-weight-hanging"></i> Max take-off Weight: 3368 lb</li>
+                        <li><i class="fas fa-weight"></i> Empty Weight: 2355 lb</li>
+                        <li><i class="fas fa-tachometer-alt"></i> Operating Weight: 2355 lb</li>
+                        <li><i class="fas fa-balance-scale"></i> Useful Load: 1013 lb</li>
+                        <li><i class="fas fa-gas-pump"></i> Full-fuel Payload: 401 lb (650 lb w/60 gal)</li>
+                        <li><i class="fas fa-gas-pump"></i> Approved Fuels: 100 LL</li>
+                        <li><i class="fas fa-gas-pump"></i> Fuel Capacity: 102 gal</li>
+                        <li><i class="fas fa-tachometer-alt"></i> Max Speed: 217 kias</li>
+                        <li><i class="fas fa-tachometer-alt"></i> Normal Cruise: 217 kias (75% power)</li>
+                        <li><i class="fas fa-tachometer-alt"></i> Economy Cruise: 158 kias (50% power)</li>
+                        <li><i class="fas fa-arrow-up"></i> Rate of Climb: 1230 fpm</li>
+                        <li><i class="fas fa-route"></i> Max Range: 1150 nm</li>
+                        <li><i class="fas fa-cloud"></i> Certified Ceiling: 25,000 ft</li>
+                        <li><i class="fas fa-plane-departure"></i> T/O Dist @ MTOW: 1080 ft</li>
+                        <li><i class="fas fa-plane-arrival"></i> Ldg Dist @ MTOW: 1200 ft</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="section-title">Aircraft Details</h4>
+                    <p>N251MB is the third to last Bravo ever made. It is the fastest, most efficient piston single out there.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>Contact: Office: 801.230.2160 | Cell: 801.230.2160 | Email: <a href="mailto:ppetersen@geav.pro" class="text-white">ppetersen@geav.pro</a></p>
+        <p>Headquarters: 3216 West 8510 South, West Jordan, Utah 84088</p>
+        <p>&copy; 2024 Golden Eagle Aviators. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
