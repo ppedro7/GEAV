@@ -51,8 +51,8 @@
             background-color: #004494;
         }
 
-        .documentation-section, .benefits-section {
-            padding: 40px 0;
+        .documentation-section, .benefits-section, .intro-section {
+            padding: 20px 0; /* Adjusted padding to tighten up the space */
             background: #f8f9fa;
             margin-bottom: 20px;
             border-radius: 10px;
@@ -67,6 +67,33 @@
 
         .btn-doc {
             margin: 5px;
+            width: 200px; /* Ensure all buttons are the same width */
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 5px;
+            display: inline-block;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn-doc:hover {
+            background-color: #004494;
+            color: white;
+        }
+
+        .doc-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .doc-item p {
+            margin: 0;
+            margin-left: 10px;
+            flex: 1;
         }
     </style>
 </head>
@@ -100,16 +127,9 @@
     </div>
 
     <div class="container mt-5">
-        <section class="documentation-section">
-            <h3 class="section-title text-center">Partnership Documentation</h3>
-            <div class="text-center">
-                <a href="documents/PartnershipAgreement.pdf" class="btn btn-primary btn-doc">Partnership Agreement</a>
-                <a href="documents/RulesAndRegulations.pdf" class="btn btn-primary btn-doc">Rules and Regulations</a>
-                <a href="documents/GoldenEagleAviators-brief4a.pdf" class="btn btn-primary btn-doc">GEAV Brief</a>
-                <a href="https://aircraftclubs.com" class="btn btn-primary btn-doc">Scheduling Site</a>
-            </div>
+        <section class="intro-section">
+            <p>Being a Partner in Golden Eagle Aviators means having an equity share of GEAV, which owns the aircraft. Your vote counts as much as anyone's in all decisions around the function of GEAV and the aircraft. Be as involved as much or as little as you want. We need a Maintenance Manager. We need a Badging Coordinator. We need an Operations Manager. And so on. All things you would have to do on your own if you were sole owner, but here, a team of fellow Partner-Aviators are here to form a community, both bringing down costs, and making the overall overhead of aircraft ownership less of a burden, so that you can enjoy what you enjoy about flying.</p>
         </section>
-
         <div class="row">
             <div class="col-md-6">
                 <section class="benefits-section">
@@ -136,6 +156,28 @@
                 </section>
             </div>
             <div class="col-md-6">
+                <section class="documentation-section">
+                    <h3 class="section-title text-center">Partnership Documentation</h3>
+                    <p>Review the documents to understand the full details of our partnership.</p>
+                    <div>
+                        <div class="doc-item">
+                            <a href="documents/GEAV-PartnershipAgreement.pdf" class="btn btn-primary btn-doc">Partnership Agreement</a>
+                            <p>Details the terms and conditions of the partnership.</p>
+                        </div>
+                        <div class="doc-item">
+                            <a href="documents/GEAV-RulesAndRegulations.pdf" class="btn btn-primary btn-doc">Rules and Regulations</a>
+                            <p>Outlines the rules and regulations that all partners must follow.</p>
+                        </div>
+                        <div class="doc-item">
+                            <a href="documents/GoldenEagleAviators-brief4a.pdf" class="btn btn-primary btn-doc">GEAV Brief</a>
+                            <p>Provides an overview of Golden Eagle Aviators.</p>
+                        </div>
+                        <div class="doc-item">
+                            <a href="https://aircraftclubs.com" class="btn btn-primary btn-doc">Scheduling Site</a>
+                            <p>Access the scheduling system to book the aircraft.</p>
+                        </div>
+                    </div>
+                </section>
                 <section class="info-section">
                     <h3 class="section-title text-center">How to Buy into the Partnership</h3>
                     <p>1. Review the Partnership Documentation.</p>
