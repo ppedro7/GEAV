@@ -7,7 +7,57 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .header {
+            background: url('images/N69MB-leftwing.jpg') no-repeat center center/cover;
+            height: 400px; /* Adjust the height to make the header image smaller */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 4em;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .icon {
+            font-size: 3em;
+            color: #0056b3;
+        }
+
+        .info-section {
+            padding: 50px 0;
+        }
+
+        .info-card {
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            background-color: #0056b3;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #004494;
+        }
+    </style>
 </head>
 <body>
     <header class="bg-dark text-white text-center p-3">
@@ -34,28 +84,45 @@
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <div class="jumbotron text-center">
-            <h2>Welcome to Golden Eagle Aviators</h2>
-            <p>Providing an affordable way for your mission</p>
-        </div>
+    <div class="header">
+        <h1>Golden Eagle Aviators</h1>
+        <p>Your trusted partner for your mission.</p>
+        <a href="partnership.html" class="btn btn-primary mt-3">Join Our Partnership</a>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h3>Excellent Availability</h3>
-                <p>The partnership has a smart scheduling system that ensures the plane is almost always available when you need it.</p>
+    <div class="container mt-5">
+        <section class="info-section text-center">
+            <h2 class="section-title">Why Choose GEAV?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card info-card">
+                        <div class="card-body">
+                            <i class="fas fa-clock icon"></i>
+                            <h5 class="card-title">Excellent Availability</h5>
+                            <p class="card-text">The partnership has a smart scheduling system that ensures the plane is almost always available when you need it.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card info-card">
+                        <div class="card-body">
+                            <i class="fas fa-user-friends icon"></i>
+                            <h5 class="card-title">Partner-Supported</h5>
+                            <p class="card-text">The partnership is run by you! Be as involved as much or as little as you want.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card info-card">
+                        <div class="card-body">
+                            <i class="fas fa-plane icon"></i>
+                            <h5 class="card-title">Top-Notch Aircraft</h5>
+                            <p class="card-text">We maintain our aircraft to the highest standards, ensuring a safe and enjoyable flying experience.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h3>Partner-Supported</h3>
-                <p>The partnership is run by you! Be as involved as much or as little as you want.</p>
-            </div>
-            <div class="col-md-4">
-                <h3>Cost-Effective</h3>
-                <p>Pooling resources with other aviation enthusiasts reduces the overall cost of aircraft ownership.</p>
-            </div>
-        </div>
+        </section>
     </div>
 
     <footer class="bg-dark text-white text-center p-3">
@@ -64,8 +131,9 @@
         <p>&copy; 2024 Golden Eagle Aviators. All rights reserved.</p>
     </footer>
 
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
