@@ -39,16 +39,17 @@
         .icon-list li i {
             font-size: 1.2em;
             margin-right: 10px;
-            color: #0056b3;
+            color: gold;
         }
 
         .btn-primary {
-            background-color: #0056b3;
+            background-color: black;
             border: none;
         }
 
         .btn-primary:hover {
-            background-color: #004494;
+            background-color: gold;
+            color: black;
         }
 
         .documentation-section, .benefits-section, .intro-section {
@@ -72,15 +73,15 @@
             padding: 10px 0;
             border-radius: 5px;
             display: inline-block;
-            background-color: #0056b3;
-            color: white;
+            background-color: black;
+            color: gold;
             text-decoration: none;
             font-weight: bold;
         }
 
         .btn-doc:hover {
-            background-color: #004494;
-            color: white;
+            background-color: gold;
+            color: black;
         }
 
         .doc-item {
@@ -94,6 +95,31 @@
             margin: 0;
             margin-left: 10px;
             flex: 1;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: black;
+            color: gold;
+            text-align: center;
+        }
+
+        td:first-child {
+            text-align: center;
+        }
+
+        td:nth-child(2) {
+            background-color: #f1f1f1;
         }
     </style>
 </head>
@@ -180,16 +206,48 @@
                 </section>
                 <section class="info-section">
                     <h3 class="section-title text-center"> How to Become a Partner</h3>
-                    <ul class="list-unstyled icon-list">
-						<li><i class="fas fa-file-alt"></i> Review the Partnership Documentation.</li>
-						<li><i class="fas fa-handshake"></i> <a href="contact.html">Meet</a>&nbspto understand the benefits and responsibilities.</li>
-						<li><i class="fas fa-plane"></i> Demo ride to make sure the plane fits your needs and that you're a good candidate for the partnership.</li>
-						<li><i class="fas fa-money-check"></i> Pay the initial buy-in, which includes annual maintenance fee, engine fund, and prop fund.</li>
-						<li><i class="fas fa-check"></i> Insurance check-out ride with one of our CFIs.</li>
-						<li><i class="fas fa-id-badge"></i> Airport badging with Salt Lake City Department of Airports.</li>
-						<li><i class="fas fa-clock"></i> Meet insurance hours minimums. If needed, use one of our CFIs (or your own) to obtain needed hours.</li>
-						<li><i class="fas fa-plane-departure"></i> Take to the skies!</li>
-					</ul>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Step</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Review Documentation</td>
+                                <td>Review the Partnership Documentation.</td>
+                            </tr>
+                            <tr>
+                                <td>Meet</td>
+                                <td><a href="contact.html">Meet</a> to understand the benefits and responsibilities.</td>
+                            </tr>
+                            <tr>
+                                <td>Demo Ride</td>
+                                <td>Demo ride to make sure the plane fits your needs and that you're a good candidate for the partnership.</td>
+                            </tr>
+                            <tr>
+                                <td>Pay Buy-In</td>
+                                <td>Pay the initial buy-in, which includes annual maintenance fee, engine fund, and prop fund.</td>
+                            </tr>
+                            <tr>
+                                <td>Insurance Check-Out</td>
+                                <td>Insurance check-out ride with one of our CFIs.</td>
+                            </tr>
+                            <tr>
+                                <td>Airport Badging</td>
+                                <td>Airport badging with Salt Lake City Department of Airports.</td>
+                            </tr>
+                            <tr>
+                                <td>Insurance Hours</td>
+                                <td>Meet insurance hours minimums. If needed, use one of our CFIs (or your own) to obtain needed hours.</td>
+                            </tr>
+                            <tr>
+                                <td>Take to the Skies</td>
+                                <td>Take to the skies!</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </section>
             </div>
         </div>
