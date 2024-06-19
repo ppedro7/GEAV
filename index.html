@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golden Eagle Aviators</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
@@ -58,6 +58,50 @@
             background-color: gold;
             color: black;
         }
+
+        .imagine-section {
+            padding: 30px;
+            background-color: #f8f9fa;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .imagine-section .imagine {
+            font-size: 3em;
+            font-family: 'Pacifico', cursive;
+            color: #333;
+        }
+
+        .imagine-section p {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .imagine-section .cloud {
+            position: absolute;
+            width: 100px;
+        }
+
+        .imagine-section .cloud-left {
+            top: 10px;
+            left: -20px;
+        }
+
+        .imagine-section .cloud-right {
+            top: 10px;
+            right: -20px;
+        }
+
+        .imagine-section .airplane {
+            position: absolute;
+            width: 60px;
+            bottom: -20px;
+            right: 50%;
+            transform: translateX(50%);
+        }
     </style>
 </head>
 <body>
@@ -93,7 +137,7 @@
 
     <div class="container mt-5">
         <section class="info-section text-center">
-            <h2 class="section-title">Why Choose GEAV?</h2>
+            <h2 class="section-title">Why GEAV?</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card info-card">
@@ -124,6 +168,14 @@
                 </div>
             </div>
         </section>
+
+        <section class="imagine-section">
+            <img src="images/cloud-left.png" alt="Cloud" class="cloud cloud-left">
+            <img src="images/cloud-right.png" alt="Cloud" class="cloud cloud-right">
+            <p class="imagine">Imagine…</p>
+            <p>Instead of getting there in 10 hours driving or 4 hours in your C172 or your PA-28, you can arrive in 2 hours, and burn almost the same fuel—or less.</p>
+            <img src="images/airplane.png" alt="Airplane" class="airplane">
+        </section>
     </div>
 
     <footer class="bg-dark text-white text-center p-3">
@@ -132,9 +184,8 @@
         <p>&copy; 2024 Golden Eagle Aviators. All rights reserved.</p>
     </footer>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
