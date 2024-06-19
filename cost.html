@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden Eagle Aviators</title>
+    <title>Five-year Cost Comparison</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -11,7 +11,7 @@
     <style>
         .header {
             background: url('images/N69MB-leftwing.jpg') no-repeat center center/cover;
-            height: 400px; /* Adjust the height to make the header image smaller */
+            height: 400px;
             color: white;
             display: flex;
             flex-direction: column;
@@ -36,16 +36,13 @@
             margin-bottom: 20px;
         }
 
-        .icon {
-            font-size: 3em;
-            color: gold;
-        }
-
-        .info-section {
+        .comparison-section {
             padding: 50px 0;
+            background-color: #f8f9fa;
+            border-radius: 10px;
         }
 
-        .info-card {
+        .comparison-table {
             margin-bottom: 30px;
         }
 
@@ -59,59 +56,48 @@
             color: black;
         }
 
-        .highlight-section {
-            padding: 30px;
+        .list-unstyled i {
+            color: gold;
+            margin-right: 10px;
+        }
+
+        .comparison-table img {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            display: block;
+        }
+
+        .financial-advantage {
             background-color: #e9ecef;
-            text-align: center;
-            border-radius: 10px;
-            margin-top: 30px;
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .imagine-section {
             padding: 30px;
-            background-color: #f8f9fa;
-            text-align: center;
             border-radius: 10px;
             margin-top: 30px;
-            position: relative;
         }
 
-        .imagine-section .imagine {
-            font-size: 3em;
-            font-family: 'Pacifico', cursive;
-            color: #333;
+        .financial-advantage ul {
+            text-align: left;
         }
 
-        .imagine-section p {
-            font-size: 1.5em;
+        .header-box {
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
             font-weight: bold;
-            color: #333;
+            margin-bottom: 20px;
         }
 
-        .imagine-section .cloud {
-            position: absolute;
-            width: 100px;
+        .acquisition-header {
+            background-color: orange;
         }
 
-        .imagine-section .cloud-left {
-            top: 10px;
-            left: -20px;
+        .annual-header {
+            background-color: yellow;
+            color: black;
         }
 
-        .imagine-section .cloud-right {
-            top: 10px;
-            right: -20px;
-        }
-
-        .imagine-section .airplane {
-            position: absolute;
-            width: 60px;
-            bottom: -20px;
-            right: 50%;
-            transform: translateX(50%);
+        .variable-header {
+            background-color: green;
         }
     </style>
 </head>
@@ -141,55 +127,56 @@
     </nav>
 
     <div class="header">
-        <h1>Golden Eagle Aviators</h1>
-        <p>The Partnership for your mission. Aircraft ownership, affordable.</p>
-        <a href="partnership.html" class="btn btn-primary mt-3">Become a Partner</a>
+        <h1>Five-year Cost Comparison</h1>
     </div>
 
     <div class="container mt-5">
-        <section class="info-section text-center">
-            <h2 class="section-title">Why GEAV?</h2>
-            <div class="row">
+        <section class="comparison-section text-center">
+            <p>Stakeholder model in GEAV includes all the benefits of aircraft ownership at a fraction of the cost.</p>
+			<p>There are three cost buckets associated with owning an aircraft.</p>
+            <div class="row comparison-table">
                 <div class="col-md-4">
-                    <div class="card info-card">
-                        <div class="card-body">
-                            <i class="fas fa-clock icon"></i>
-                            <h5 class="card-title">Excellent Availability</h5>
-                            <p class="card-text">The partnership has a smart scheduling system and schedule rules that ensure your plane is almost always available when you want it.</p>
-                        </div>
-                    </div>
+                    <div class="header-box acquisition-header">Acquisition</div>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-plane"></i> Aircraft</li>
+                        <li><i class="fas fa-tools"></i> Engine reserve</li>
+                        <li><i class="fas fa-fan"></i> Prop reserve</li>
+                        <li><i class="fas fa-tachometer-alt"></i> Avionics upgrades</li>
+                    </ul>
                 </div>
                 <div class="col-md-4">
-                    <div class="card info-card">
-                        <div class="card-body">
-                            <i class="fas fa-user-friends icon"></i>
-                            <h5 class="card-title">Partner-Supported</h5>
-                            <p class="card-text">The partnership is run by you! Be as involved as much or as little as you want.</p>
-                        </div>
-                    </div>
+                    <div class="header-box annual-header">Annual</div>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-calendar-alt"></i> Annual</li>
+                        <li><i class="fas fa-warehouse"></i> Hangar</li>
+                        <li><i class="fas fa-shield-alt"></i> Insurance</li>
+                        <li><i class="fas fa-cogs"></i> Sched maint</li>
+                        <li><i class="fas fa-cloud"></i> Weather service</li>
+                    </ul>
                 </div>
                 <div class="col-md-4">
-                    <div class="card info-card">
-                        <div class="card-body">
-                            <i class="fas fa-plane icon"></i>
-                            <h5 class="card-title">Top-Notch Aircraft</h5>
-                            <p class="card-text">Aircraft are maintained to the highest standards, ensuring a safe and enjoyable flying experience.</p>
-                        </div>
-                    </div>
+                    <div class="header-box variable-header">Variable/hr</div>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-gas-pump"></i> Fuel</li>
+                        <li><i class="fas fa-oil-can"></i> Oil change reserve</li>
+                        <li><i class="fas fa-tools"></i> Engine reserve</li>
+                        <li><i class="fas fa-fan"></i> Prop reserve</li>
+                        <li><i class="fas fa-tools"></i> Regular maintenance</li>
+                    </ul>
                 </div>
             </div>
-        </section>
-
-        <section class="highlight-section">
-            <p>Past experience shows the 10-place Equity Stakeholder model has better results, less outlay, and similar to or better availability to 4-6 place fractionals and to center-run flight clubs.</p>
-        </section>
-
-        <section class="imagine-section">
-            <img src="images/cloud-left.png" alt="Cloud" class="cloud cloud-left">
-            <img src="images/cloud-right.png" alt="Cloud" class="cloud cloud-right">
-            <p class="imagine">Imagine…</p>
-            <p>Instead of getting there in 10 hours driving or 4 hours in your C172 or your PA-28, you can arrive in 2 hours, and burn almost the same fuel—or less.</p>
-            <img src="images/airplane.png" alt="Airplane" class="airplane">
+            <img src="images/FiveYearCostComparison.png" alt="Five Year Cost Comparison Chart" class="img-fluid">
+            <div class="row mt-5 financial-advantage">
+                <div class="col-md-6">
+                    <h3>GEAV Financial Advantage</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-plane"></i> Same aircraft</li>
+                        <li><i class="fas fa-calendar-alt"></i> Similar availability</li>
+                        <li><i class="fas fa-tools"></i> Less work</li>
+                        <li><i class="fas fa-dollar-sign"></i> Fraction of the cost</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </div>
 
