@@ -91,27 +91,21 @@
             color: #333;
         }
 
-        .imagine-section .cloud {
-            position: absolute;
-            width: 100px;
+        .video-wrapper {
+            position: relative;
+            display: inline-block;
+            border: 5px solid gold;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            width: 100%; /* Make the video responsive */
+            max-width: 640px; /* Maximum width for the video */
         }
 
-        .imagine-section .cloud-left {
-            top: 10px;
-            left: -20px;
-        }
-
-        .imagine-section .cloud-right {
-            top: 10px;
-            right: -20px;
-        }
-
-        .imagine-section .airplane {
-            position: absolute;
-            width: 60px;
-            bottom: -20px;
-            right: 50%;
-            transform: translateX(50%);
+        .video-wrapper video {
+            display: block;
+            width: 100%; /* Ensure the video takes the full width of its container */
         }
     </style>
 </head>
@@ -185,11 +179,14 @@
         </section>
 
         <section class="imagine-section">
-            <img src="images/cloud-left.png" alt="Cloud" class="cloud cloud-left">
-            <img src="images/cloud-right.png" alt="Cloud" class="cloud cloud-right">
             <p class="imagine">Imagine…</p>
-            <p>Instead of getting there in 10 hours driving or 4 hours in your C172 or your PA-28, you can arrive in 2 hours, and burn almost the same fuel—or less.</p>
-            <img src="images/airplane.png" alt="Airplane" class="airplane">
+            <p>Instead of getting there in 10 hours driving or 4 hours in your C172 or your PA-28, you can arrive in 2 hours, and burn almost the same fuel—or less.<br>N251MB used to be N69MB, which was originally N131US.</p>
+            <div class="video-wrapper">
+                <video controls playsinline>
+                    <source src="images/Flyfaster480.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </section>
     </div>
 
