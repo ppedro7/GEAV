@@ -181,3 +181,94 @@ footer a:hover {
     color: goldenrod;
     font-size: 1.4em;
 }
+
+.doc-card {
+    border: 1px solid #e6e6e6;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    margin-top: 28px;
+}
+
+.doc-card__header {
+    background: linear-gradient(135deg, #0f0f10 0%, #2a2a2e 100%);
+    color: #ffd766; /* subtle GEAV gold accent */
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    letter-spacing: .3px;
+}
+
+.doc-card__header i {
+    color: #ffd766;
+    font-size: 1.2rem;
+}
+
+.doc-card__body { background: #fff; }
+
+.list-docs .list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    border: 0;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background .2s ease, transform .1s ease;
+}
+
+.list-docs .list-group-item:last-child { border-bottom: 0; }
+
+.list-docs .doc-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.list-docs .doc-left i {
+    font-size: 1.05rem;
+    color: #c5a200; /* gold tone */
+}
+
+.list-docs .doc-title {
+    font-weight: 600;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list-docs .doc-meta {
+    font-size: .85rem;
+    color: #666;
+}
+
+.list-docs .doc-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #e8e8e8;
+    background: #fafafa;
+}
+
+.list-docs .list-group-item:hover {
+    background: #fffbea; /* subtle warm hover */
+    transform: translateY(-1px);
+}
+
+.section-title + p { margin-bottom: 10px; }
+
+/* optional: small “download all” chip */
+.doc-chip {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 8px 12px; border-radius: 999px;
+    border: 1px solid #ececec; background:#f9f9f9;
+    font-weight: 600; margin: 10px 0 0 0;
+}
+.doc-chip i { color:#888; }
