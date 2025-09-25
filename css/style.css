@@ -155,19 +155,29 @@ footer a:hover {
 
 .doc-section {
     margin-top: 30px;
-    padding: 20px;
-    border: 2px solid #ddd;
-    border-radius: 12px;
-    background: #f9f9f9;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 25px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #ffffff, #fdf6e3); /* soft gradient with gold tone */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doc-section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.18);
 }
 
 .doc-section h5 {
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: 700;
     margin-bottom: 20px;
     color: #222;
-    border-bottom: 2px solid gold;
-    display: inline-block;
-    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.doc-section h5 i {
+    margin-right: 10px;
+    color: goldenrod;
+    font-size: 1.4em;
 }
